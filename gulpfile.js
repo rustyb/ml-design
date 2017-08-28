@@ -205,7 +205,7 @@ gulp.task('styles', function () {
     .pipe($.sass({
       outputStyle: 'expanded',
       precision: 10,
-      includePaths: require('node-bourbon').with('node_modules/jeet/scss', 'assets/styles')
+      includePaths: require('node-bourbon').with('node_modules/jeet', 'assets/styles')
     }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/assets/styles'))
